@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>efrei.se</groupId>
+  <artifactId>testing</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sonar.language>java</sonar.language> 
+    <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+  	<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+  </properties>
+  <dependencies>
+   <dependency>
+    <groupId>org.apache.hadoop</groupId>
+    <artifactId>hadoop-core</artifactId>
+    <version>1.2.1</version>
+ </dependency>
+  <dependency>  
+	    <groupId>commons-configuration</groupId>  
+	    <artifactId>commons-configuration</artifactId>  
+	    <version>1.9</version>  
+	</dependency>  
+	<dependency>  
+	    <groupId>commons-lang</groupId>  
+	    <artifactId>commons-lang</artifactId>  
+	    <version>2.6</version>  
+	</dependency>
+  </dependencies>
+  <build>
+  <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.1.1</version>
+      </plugin>
+    </plugins>
+  </pluginManagement>
+</build>
+</project>

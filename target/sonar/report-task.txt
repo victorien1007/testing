@@ -1,0 +1,6 @@
+projectKey=efrei.se:testing
+serverUrl=http://localhost:9000
+serverVersion=7.4.0.18908
+dashboardUrl=http://localhost:9000/dashboard?id=efrei.se%3Atesting
+ceTaskId=AWedopmlrV5d_4-KSCQO
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWedopmlrV5d_4-KSCQO
